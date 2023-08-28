@@ -14,14 +14,22 @@ fun NavGraph(navController: NavHostController) {
         navController = navController,
         startDestination = Screen.CoinListScreen.route
     ) {
-        composable(route = Screen.CoinListScreen.route){
-            CoinListScreen()
+        composable(
+            route = Screen.CoinListScreen.route
+        ) {
+            CoinListScreen(navController)
         }
-        composable(route = Screen.CoinDetailScreen.route){
+        composable(
+            route = Screen.CoinDetailScreen.route + "/{coinId}"
+        ) {
             CoinDetailScreen()
         }
-        composable(route = Screen.CoinFavoriteScreen.route){
+        composable(
+            route = Screen.CoinFavoriteScreen.route
+        ) {
             CoinFavoriteScreen()
         }
     }
 }
+
+
