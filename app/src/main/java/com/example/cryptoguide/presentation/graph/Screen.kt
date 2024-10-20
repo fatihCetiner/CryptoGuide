@@ -3,6 +3,7 @@ package com.example.cryptoguide.presentation.graph
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Favorite
 import androidx.compose.material.icons.filled.Home
+import androidx.compose.material.icons.filled.List
 import androidx.compose.material.icons.filled.Star
 import androidx.compose.ui.graphics.vector.ImageVector
 
@@ -14,7 +15,7 @@ sealed class Screen(
     object CoinListScreen: Screen(
         route = "coin_list",
         title = "Coin List",
-        icon = Icons.Default.Home
+        icon = Icons.Default.List
     )
     object CoinDetailScreen: Screen(
         route = "coin_detail",
@@ -23,7 +24,7 @@ sealed class Screen(
     )
     object CoinFavoriteScreen: Screen(
         route = "coin_favorite",
-        title = "Coin Favorite",
+        title = "Favorite Coin",
         icon = Icons.Default.Favorite
     )
 }
