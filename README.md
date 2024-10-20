@@ -10,6 +10,11 @@ It is built using Jetpack Compose and follows the MVVM architecture pattern, inc
 - UseCase Layer: Business logic is encapsulated in use cases for better testability and modularity.
 
 ## Screenshots 📱
+Below are some screenshots of the app:
+<p align="center"> 
+  <img src="screenshots/coin_list.png" alt="Coin List Screen" width="200"/> 
+  <img src="screenshots/coin_detail.png" alt="Coin Detail Screen" width="200"/> 
+</p>
 
 ## Technologies and Libraries Used 🛠
 
